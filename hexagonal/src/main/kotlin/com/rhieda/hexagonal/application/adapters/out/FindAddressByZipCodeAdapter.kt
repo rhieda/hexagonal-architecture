@@ -14,7 +14,4 @@ class FindAddressByZipCodeAdapter(
 //        return addressResponse.toAddress()
 //    }
     override fun find(zipCode: String): Address = findAddressByZipCodeClient.find(zipCode).toAddress()
-
-
-
 }

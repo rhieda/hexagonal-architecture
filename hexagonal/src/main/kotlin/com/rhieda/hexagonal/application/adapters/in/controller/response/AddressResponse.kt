@@ -1,8 +1,8 @@
-package com.rhieda.hexagonal.application.adapters.out.repository.entity
+package com.rhieda.hexagonal.application.adapters.`in`.controller.response
 
 import com.rhieda.hexagonal.application.core.domain.Address
 
-data class AddressEntity(
+data class AddressResponse(
     val street: String,
     val city: String,
     val state: String
@@ -12,6 +12,4 @@ data class AddressEntity(
         address.city,
         address.state
     )
-
-    fun toAddress(): Address = Address(street, city, state)
 }
